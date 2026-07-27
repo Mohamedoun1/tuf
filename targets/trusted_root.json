@@ -1,0 +1,74 @@
+{
+  "mediaType": "application/vnd.dev.sigstore.trustedroot+json;version=0.1",
+  "tlogs": [
+    {
+      "hashAlgorithm": "SHA2_256",
+      "publicKey": {
+        "rawBytes": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEdmfCh3Cem2E3rjyuIaDZUSdj2wtiU+4Dv/dIXh29XeJtJvMwcd4Z8v63C0pBHpPWUY4k6/7sVXWfIidkU5N1fg==",
+        "keyDetails": "PKIX_ECDSA_P256_SHA_256",
+        "validFor": {
+          "start": "2026-07-13T15:10:50.279456114Z"
+        }
+      },
+      "logId": {
+        "keyId": "wSQsf24xGLzApuYyCws2HTZ+xSPDHqIOHFQlOn+7duc="
+      }
+    }
+  ],
+  "certificateAuthorities": [
+    {
+      "subject": {
+        "organization": "Synopsys",
+        "commonName": "orca-dev Fulcio Root CA"
+      },
+      "certChain": {
+        "certificates": [
+          {
+            "rawBytes": "MIICDzCCAZWgAwIBAgIUSoQge87OlhBoeKOwLoUuDYzcBSMwCgYIKoZIzj0EAwMwNTEgMB4GA1UEAwwXb3JjYS1kZXYgRnVsY2lvIFJvb3QgQ0ExETAPBgNVBAoMCFN5bm9wc3lzMB4XDTI2MDcwMjE0MjEwNloXDTM2MDYyOTE0MjEwNlowNTEgMB4GA1UEAwwXb3JjYS1kZXYgRnVsY2lvIFJvb3QgQ0ExETAPBgNVBAoMCFN5bm9wc3lzMHYwEAYHKoZIzj0CAQYFK4EEACIDYgAEGPjU3xka4i4qpBoBjWkXTjdRuMpC/2XYUZk0ayAHyHGwE04ESipmiA37cqGNk1LcHmQnaJAl0AwibYjqh43iGOcjv9fHdHUoOUct4zaXAkohusyPcpfO56nOU0RePpLqo2YwZDASBgNVHRMBAf8ECDAGAQH/AgEAMA4GA1UdDwEB/wQEAwIBhjAdBgNVHQ4EFgQU/4g2AA2qa8wa1+g1WwtBy/otj0kwHwYDVR0jBBgwFoAUXUzFVVaHKxKuonNdKyvGpu3JJlwwCgYIKoZIzj0EAwMDaAAwZQIwbVCp5krULpYU/tHP6O+AdDNhne4eC2npbXA4Uu4UknA6U31CtJH7qhyC2VuKlmNKAjEAoKO9A1wQywbIftUL5hLgWbh+jHQkaZ3mN169pbHbLlQi8LWL+G5HjLDI2BAG6qOH"
+          }
+        ]
+      },
+      "validFor": {
+        "start": "2026-07-02T14:21:06Z",
+        "end": "2036-06-29T14:21:06Z"
+      }
+    }
+  ],
+  "ctlogs": [
+    {
+      "hashAlgorithm": "SHA2_256",
+      "publicKey": {
+        "rawBytes": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEQXUKnG1DpafG7c2yIg5m7MRPti0aKm/h+Mxgmd/a9yPDoyRzlVRHoDIQyeyr8HyotZwQlCXuMpzahu4sLYtNug==",
+        "keyDetails": "PKIX_ECDSA_P256_SHA_256",
+        "validFor": {
+          "start": "2026-07-13T15:10:50.279456114Z"
+        }
+      },
+      "logId": {
+        "keyId": "YdAChmLCnnTiTTWaxU+QnG1Bw4eIyxHGOgYxUX/k16c="
+      }
+    }
+  ],
+  "timestampAuthorities": [
+    {
+      "subject": {
+        "organization": "Synopsys",
+        "commonName": "orca-dev sigstore TSA root CA"
+      },
+      "certChain": {
+        "certificates": [
+          {
+            "rawBytes": "MIICCDCCAY6gAwIBAgIULJuR91tmA9jLfGFZRi7x7fiSGHUwCgYIKoZIzj0EAwIwOzEmMCQGA1UEAwwdb3JjYS1kZXYgc2lnc3RvcmUgVFNBIHJvb3QgQ0ExETAPBgNVBAoMCFN5bm9wc3lzMB4XDTI2MDcxMzE1MDkyNloXDTMxMDcxMjE1MDkyNlowMzEeMBwGA1UEAwwVb3JjYS1kZXYgc2lnc3RvcmUgVFNBMREwDwYDVQQKDAhTeW5vcHN5czBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABL4d4NeRidNPi461zEWBDtbxj/hbCoHftecsugyXT2wKBKp/BoGbYZWukdRj5H00jjqJlLpixs8cMMsMiH8dH+yjeDB2MAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQDAgeAMBYGA1UdJQEB/wQMMAoGCCsGAQUFBwMIMB0GA1UdDgQWBBS0yTIXZShDydTIWd3F2FrKZOzHTjAfBgNVHSMEGDAWgBRStC19y1TNxg5CM7DcyNM0EDlZZzAKBggqhkjOPQQDAgNoADBlAjEAvpMm12dt1QaTRGnddCkqsklAxn4lfCKFdgpHh+bmRnd77QxepRPLLX5kQ+XYnAdTAjBDYu8xBNxd8LIPtd2MMiPOo+C/ANxl685VFLcNtlMCnW94ATkeTajTtcoX1QWDmPs="
+          },
+          {
+            "rawBytes": "MIICGTCCAZ6gAwIBAgIUJJ/PJSjU8cGqIuv3dwAVxGP4BP4wCgYIKoZIzj0EAwMwOzEmMCQGA1UEAwwdb3JjYS1kZXYgc2lnc3RvcmUgVFNBIHJvb3QgQ0ExETAPBgNVBAoMCFN5bm9wc3lzMB4XDTI2MDcxMzE1MDkyNloXDTQ2MDcwODE1MDkyNlowOzEmMCQGA1UEAwwdb3JjYS1kZXYgc2lnc3RvcmUgVFNBIHJvb3QgQ0ExETAPBgNVBAoMCFN5bm9wc3lzMHYwEAYHKoZIzj0CAQYFK4EEACIDYgAE5SWHRdWzcAhVnoVvOx1J2c9VoFYKPTR/jJ8FcXnqyjlndcGEFps5MadvZtT+MOZWNgllcq1bpKW342oFncwv8Q7Xtuj9hGgoF/3KsoveYbj6WxpgQLsniFheGo8h+qSto2MwYTAfBgNVHSMEGDAWgBRStC19y1TNxg5CM7DcyNM0EDlZZzAPBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwIBBjAdBgNVHQ4EFgQUUrQtfctUzcYOQjOw3MjTNBA5WWcwCgYIKoZIzj0EAwMDaQAwZgIxAP593rgw+UDhBBeDsH5teclOYNfeqa07nVX9c9j+rV5t0plc5wdNno4pUZlJGBNkAgIxAM8dKVvNnZ12+8sDesNg8mSbf2X5Gel7DR5N1PnbxvnfS6V+6E0GzbARu6r3Pfzz3A=="
+          }
+        ]
+      },
+      "validFor": {
+        "start": "2026-07-13T15:09:26Z",
+        "end": "2031-07-12T15:09:26Z"
+      }
+    }
+  ]
+}
