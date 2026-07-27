@@ -1,0 +1,67 @@
+{
+ "signatures": [
+  {
+   "keyid": "559022a073a90654ccbb0c1678a53e6acb3539c45cbc01971d6f3f386c99a999",
+   "sig": ""
+  }
+ ],
+ "signed": {
+  "_type": "root",
+  "consistent_snapshot": true,
+  "expires": "2027-07-27T14:43:36Z",
+  "keys": {
+   "559022a073a90654ccbb0c1678a53e6acb3539c45cbc01971d6f3f386c99a999": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "hammaoun9@gmail.com",
+     "issuer": "https://github.com/login/oauth"
+    },
+    "scheme": "Fulcio",
+    "x-tuf-on-ci-keyowner": "@mohamedoun1"
+   },
+   "646f5d294572284879118e7f1140ddf80ea7f8e69ceedaa84fb23d95263bb438": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "https://github.com/Mohamedoun1/tuf/.github/workflows/online-sign.yml@refs/heads/main",
+     "issuer": "https://token.actions.githubusercontent.com"
+    },
+    "scheme": "Fulcio",
+    "x-tuf-on-ci-online-uri": "sigstore:"
+   }
+  },
+  "roles": {
+   "root": {
+    "keyids": [
+     "559022a073a90654ccbb0c1678a53e6acb3539c45cbc01971d6f3f386c99a999"
+    ],
+    "threshold": 1
+   },
+   "snapshot": {
+    "keyids": [
+     "646f5d294572284879118e7f1140ddf80ea7f8e69ceedaa84fb23d95263bb438"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 365,
+    "x-tuf-on-ci-signing-period": 60
+   },
+   "targets": {
+    "keyids": [
+     "559022a073a90654ccbb0c1678a53e6acb3539c45cbc01971d6f3f386c99a999"
+    ],
+    "threshold": 1
+   },
+   "timestamp": {
+    "keyids": [
+     "646f5d294572284879118e7f1140ddf80ea7f8e69ceedaa84fb23d95263bb438"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 2,
+    "x-tuf-on-ci-signing-period": 1
+   }
+  },
+  "spec_version": "1.0.31",
+  "version": 1,
+  "x-tuf-on-ci-expiry-period": 365,
+  "x-tuf-on-ci-signing-period": 60
+ }
+}
