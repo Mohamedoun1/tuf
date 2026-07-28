@@ -21,6 +21,7 @@ jobs:
         with:
           gh_pages: true
           ref: ${{ inputs.ref }}
+          metadata_path: './'
 
   deploy-to-pages:
     permissions:
