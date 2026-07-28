@@ -23,16 +23,16 @@ jobs:
           ref: ${{ inputs.ref }}
           metadata_path: './'
 
-      - name: Create unversioned metadata symlinks
+      - name: Create unversioned metadata copies
         run: |
           cd github-pages/metadata
-          # Create symlinks from versioned to unversioned names for TUF client compatibility
-          ln -sf 1.root.json root.json || true
-          # Find and link the latest snapshot.json and targets.json
+          # Copy versioned files to unversioned names for TUF client compatibility (symlinks don't work on GitHub Pages)
+          cp -f 1.root.json root.json || true
+          # Find and copy the latest snapshot.json and targets.json
           SNAPSHOT_VERSION=$(ls -1 *.snapshot.json 2>/dev/null | sed 's/\([0-9]*\)\.snapshot\.json/\1/' | sort -n | tail -1)
           TARGETS_VERSION=$(ls -1 *.targets.json 2>/dev/null | sed 's/\([0-9]*\)\.targets\.json/\1/' | sort -n | tail -1)
-          [ -n "$SNAPSHOT_VERSION" ] && ln -sf ${SNAPSHOT_VERSION}.snapshot.json snapshot.json || true
-          [ -n "$TARGETS_VERSION" ] && ln -sf ${TARGETS_VERSION}.targets.json targets.json || true
+          [ -n "$SNAPSHOT_VERSION" ] && cp -f ${SNAPSHOT_VERSION}.snapshot.json snapshot.json || true
+          [ -n "$TARGETS_VERSION" ] && cp -f ${TARGETS_VERSION}.targets.json targets.json || true
           ls -la
 
   deploy-to-pages:
